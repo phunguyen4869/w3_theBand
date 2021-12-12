@@ -20,7 +20,7 @@
             });
             $(".ticket-modal, .modal-close").click(function () {
                 $(".ticket-modal").slideUp(300);
-                delay(function () {
+                (function () {
                     $(".ticket-modal").css("display", "none");
                 }, 300);
             });
