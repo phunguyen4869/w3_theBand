@@ -8,6 +8,24 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".buy-ticket-btn").click(function () {
+                $(".ticket-modal").slideDown(500);
+                $(".ticket-modal").css("display", "flex");
+            });
+            $(".modal-container").click(function (event) {
+                event.stopPropagation();
+            });
+            $(".ticket-modal, .modal-close").click(function () {
+                $(".ticket-modal").slideUp(300);
+                delay(function () {
+                    $(".ticket-modal").css("display", "none");
+                }, 300);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -93,7 +111,7 @@
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="buy-ticket-btn">Buy Tickets</a>
+                                <button href="#" class="buy-ticket-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="place-item">
@@ -103,7 +121,7 @@
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                                 </p>
-                                <a href="#" class="buy-ticket-btn">Buy Tickets</a>
+                                <button href="#" class="buy-ticket-btn">Buy Tickets</but>
                             </div>
                         </div>
                         <div class="place-item">
@@ -113,7 +131,7 @@
                                 <p class="place-time">Sun 29 Nov 2016/p>
                                     <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae
                                         justo.</p>
-                                    <a href="#" class="buy-ticket-btn">Buy Tickets</a>
+                                    <button href="#" class="buy-ticket-btn">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
