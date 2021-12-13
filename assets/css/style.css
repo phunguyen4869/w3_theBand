@@ -18,6 +18,29 @@ html {
     color: #fff !important;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-2 {
+    width: calc(100% / 2);
+}
+
+.col-3 {
+    width: calc(100% / 3);
+}
+
 #main {}
 
 #header {
@@ -122,7 +145,6 @@ html {
 
     /* right: 0;
     left: 0; */
-    text-align: center;
 }
 
 #slider .text-heading {
@@ -151,7 +173,6 @@ html {
 #content .heading-section {
     margin: 10px 0;
     letter-spacing: 4px;
-    text-align: center;
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -159,7 +180,6 @@ html {
 
 #content .sub-heading-section {
     margin: 15px 0;
-    text-align: center;
     opacity: 0.6;
     font-style: italic;
 }
@@ -167,7 +187,6 @@ html {
 #content .text-about {
     margin: 15px 0;
     text-align: justify;
-
 }
 
 #content .members-list {
@@ -178,13 +197,10 @@ html {
 
 #content .member-item {
     float: left;
-    text-align: center;
-    width: calc(100% / 3);
 }
 
 #content .member-name {
     margin: 15px 0;
-    text-align: center;
 }
 
 .member-image {
@@ -225,15 +241,13 @@ html {
 }
 
 .places-list {
-    margin: 0 -16px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 32px 8px;
 }
 
 .place-item {
     margin-bottom: 16px;
-    padding: 0 8px;
-    float: left;
-    width: calc(100% / 3);
 }
 
 .place-img {
@@ -310,7 +324,7 @@ html {
     max-width: calc(100% - 32px);
     min-height: 300px;
     position: relative;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modal-header {
