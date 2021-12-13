@@ -12,8 +12,7 @@
     <script>
         $(document).ready(function () {
             $(".buy-ticket-btn").click(function () {
-                $(".ticket-modal").slideDown(500);
-                $(".ticket-modal").css("display", "flex");
+                $(".ticket-modal").slideDown(500).css("display", "flex");
             });
             $(".modal-container").click(function (event) {
                 event.stopPropagation();
