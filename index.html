@@ -70,7 +70,7 @@
                     est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
-                <div class="members-list">
+                <div class="row members-list">
                     <div class="member-item text-center col-3">
                         <p class="member-name text-center">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-image">
@@ -83,7 +83,6 @@
                         <p class="member-name text-center">Name</p>
                         <img src="./assets/img/bandmember.jpg" alt="Name" class="member-image">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             <!-- Tour section -->
@@ -130,10 +129,49 @@
                                     <button href="#" class="buy-ticket-btn">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
+            <!-- End tour -->
+            <!-- Contact section -->
+            <div class="content-section">
+                <h2 class="heading-section text-center">CONTACT</h2>
+                <p class="sub-heading-section text-center">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-2 contact-info">
+                        <i class="ti-location-pin"></i>
+                        Chicago, US
+                        <br>
+                        <i class="ti-headphone-alt"></i>
+                        Phone: +00 151515
+                        <br>
+                        <i class="ti-email"></i>
+                        Email: mail@mail.com
+                        <br>
+                    </div>
+
+                    <div class="col col-2 contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-2">
+                                    <input type="text" class="form-control" required placeholder="Name">
+                                </div>
+                                <div class="col col-2">
+                                    <input type="email" class="form-control" required placeholder="Email">
+                                </div>
+                                
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" class="form-control" required placeholder="Message">
+                                </div>
+                            </div>
+                            <input class="form-submit-btn" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact Section -->
         </div>
         <div id="footer"></div>
     </div>
@@ -153,13 +191,13 @@
                     <i class="ti-shopping-cart"></i>
                     Tickets, $15 per person
                 </label>
-                <input id="ticket-quantity" type="text" class="modal-quantity" placeholder="How many?">
+                <input id="ticket-quantity" type="text" class="modal-quantity input-box-border" placeholder="How many?">
 
                 <label for="input-email" class="modal-label">
                     <i class="ti-user"></i>
                     Send To
                 </label>
-                <input id="input-email" type="text" class="modal-email" placeholder="Enter email">
+                <input id="input-email" type="text" class="modal-email input-box-border" placeholder="Enter email">
                 <button id="buy-ticket-btn">
                     PAY
                     <i class="ti-check"></i>

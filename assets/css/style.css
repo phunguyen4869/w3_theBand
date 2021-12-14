@@ -18,7 +18,7 @@ html {
     color: #fff !important;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -27,10 +27,20 @@ html {
     margin-right: -16px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
 }
 
 .col-2 {
@@ -40,6 +50,16 @@ html {
 .col-3 {
     width: calc(100% / 3);
 }
+
+.input-box-border {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
 
 #main {}
 
@@ -105,12 +125,6 @@ html {
 
 #nav li:hover .subnav {
     display: block;
-}
-
-#nav>li:hover>a,
-#nav .subnav li:hover a {
-    background-color: #ccc;
-    color: #000;
 }
 
 #nav .subnav {
@@ -288,11 +302,6 @@ html {
     text-decoration: none;
 }
 
-.buy-ticket-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
 .ticket-modal {
     position: fixed;
     top: 0;
@@ -312,6 +321,11 @@ html {
     color: #fff;
 }
 
+.form-submit-btn:hover,
+#buy-ticket-btn:hover,
+.buy-ticket-btn:hover,
+#nav>li:hover>a,
+#nav .subnav li:hover a,
 .modal-close:hover {
     background-color: #ccc;
     color: #000;
@@ -352,9 +366,7 @@ html {
 
 .modal-quantity,
 .modal-email {
-    padding: 8px;
     width: 100%;
-    border: 1px solid #ccc;
 }
 
 #buy-ticket-btn {
@@ -367,17 +379,39 @@ html {
     font-size: 15px;
 }
 
-#buy-ticket-btn:hover {
-    background-color: #ccc;
-    color: #000;
-    cursor: pointer;
-}
-
 .modal-footer {
     margin: 15px 0;
     text-align: right;
 }
 
-.modal-help {}
+/* Contact Form */
+.contact-content {
+    padding: 32px 0;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class^="ti-"] {
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-form .form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit-btn {
+    margin: 16px -8px 16px 0;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    float: right;
+}
 
 #footer {}
