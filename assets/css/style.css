@@ -5,13 +5,10 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
     font-size: 15px;
-}
-
-.clear {
-    clear: both;
 }
 
 .text-white {
@@ -414,4 +411,25 @@ html {
     float: right;
 }
 
-#footer {}
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+}
+
+#footer .social-list a {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4)
+}
+
+#footer .social-list a:hover {
+    opacity: 0.6;
+}
+
+.copyright {
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.4)
+}

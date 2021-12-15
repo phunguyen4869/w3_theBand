@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Band</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
@@ -29,19 +29,19 @@
         <div id="header">
             <!-- Begin nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-section">Band</a></li>
+                <li><a href="#tour-section">Tour</a></li>
+                <li><a href="#contact-section">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -59,7 +59,7 @@
         </div>
         <div id="content">
             <!-- About section -->
-            <div class="content-section">
+            <div id="about-section" class="content-section">
                 <h2 class="heading-section text-center">THE BAND</h2>
                 <p class="sub-heading-section text-center">We love music</p>
                 <p class="text-about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <!-- Tour section -->
-            <div class="tour-section">
+            <div id="tour-section" class="tour-section">
                 <div class="content-section text-white">
                     <h2 class="heading-section text-center">TOUR DATES</h2>
                     <p class="sub-heading-section text-center">Remember to book your tickets!</p>
@@ -134,7 +134,7 @@
             </div>
             <!-- End tour -->
             <!-- Contact section -->
-            <div class="content-section">
+            <div id="contact-section" class="content-section">
                 <h2 class="heading-section text-center">CONTACT</h2>
                 <p class="sub-heading-section text-center">Fan? Drop a note!</p>
                 <div class="row contact-content">
@@ -159,7 +159,7 @@
                                 <div class="col col-2">
                                     <input type="email" class="form-control" required placeholder="Email">
                                 </div>
-                                
+
                             </div>
                             <div class="row mt-8">
                                 <div class="col col-full">
@@ -172,8 +172,23 @@
                 </div>
             </div>
             <!-- End Contact Section -->
+            <!-- Map section -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="Map">
+            </div>
+            <!-- End Map section -->
         </div>
-        <div id="footer"></div>
+        <div id="footer" class="text-center">
+            <div class="social-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-github"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">&copy; Copyright 2021. All rights reserved.</p>
+        </div>
     </div>
     <div class="ticket-modal">
         <div class="modal-container">
