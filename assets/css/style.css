@@ -72,6 +72,7 @@ html {
 }
 
 #header .search-btn {
+    color: #fff;
     float: right;
     padding: 0 24px;
 }
@@ -435,12 +436,24 @@ html {
     color: rgba(0, 0, 0, 0.4)
 }
 
+/* PC */
+@media(min-width:1024px) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+}
+
 /* Tablet */
 @media(min-width:740px) and (max-width:1023px) {
+    #header .mobile-menu-btn {
+        display: none;
+    }
+
     .row {
         margin-left: 0;
         margin-right: 0;
     }
+
     .form-submit-btn {
         margin: 16px 8px 16px 0;
     }
@@ -448,5 +461,67 @@ html {
     .places-list {
         margin: 0 -16px;
         padding: 32px 8px;
+    }
+}
+
+/* Mobile */
+@media(max-width:740px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-submit-btn {
+        margin: 16px 8px 16px 0;
+    }
+
+    .places-list {
+        margin: 0 -16px;
+        padding: 32px 8px;
+    }
+
+    #nav>li {
+        display: block;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #header .mobile-menu-btn {
+        float: right;
+        padding: 0 24px;
+    }
+
+    #header .menu-icon {
+        font-size: 15px;
+        line-height: 46px;
+        color: #fff;
+    }
+
+    #nav .subnav a {
+        line-height: 22px;
+        padding: 8px 16px;
+        color: #fff;
+        background-color: #000;
+    }
+
+    .form-submit-btn:hover,
+    #buy-ticket-btn:hover,
+    .buy-ticket-btn:hover,
+    #nav>li:hover>a,
+    #nav .subnav li:hover a,
+    .modal-close:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    #nav .subnav {
+        margin-left: 32px;
+        display: block;
     }
 }

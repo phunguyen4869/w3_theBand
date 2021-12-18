@@ -20,6 +20,41 @@
             $(".ticket-modal, .modal-close").click(function () {
                 $(".ticket-modal").slideUp(300);
             });
+            if ($(document).width() <= 740) {
+                var countMenu = 0;
+                $(".mobile-menu-btn").click(function () {
+                    if (countMenu % 2 == 0) {
+                        $("#header").css("height", "auto");
+                        $(".mobile-menu-btn").css("background-color", "#ccc");
+                        $(".menu-icon").css("color", "#fff");
+                        countMenu++;
+                    } else {
+                        $("#header").css("height", "46px");
+                        $(".mobile-menu-btn").css("background-color", "#000");
+                        $(".menu-icon").css("color", "#fff");
+                        $("#nav li .subnav").css("position", "absolute");
+                        countMenu++;
+                    }
+                });
+                var countSubnav = 0;
+                $(".subnav-btn").click(function () {
+                    if (countSubnav % 2 == 0) {
+                        $("#nav li .subnav").css("position", "relative");
+                        countSubnav++;
+                    } else {
+                        $("#nav li .subnav").css("position", "absolute");
+                        countSubnav++;
+                    }
+                });
+                //auto close menu when user clicks on element
+                $(".nav-btn").click(function () {
+                    $("#header").css("height", "46px");
+                    $(".mobile-menu-btn").css("background-color", "#000");
+                    $(".menu-icon").css("color", "#fff");
+                    $("#nav li .subnav").css("position", "absolute");
+                    countMenu--;
+                });
+            }
         });
     </script>
 </head>
@@ -29,12 +64,12 @@
         <div id="header">
             <!-- Begin nav -->
             <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#about-section">Band</a></li>
-                <li><a href="#tour-section">Tour</a></li>
-                <li><a href="#contact-section">Contact</a></li>
-                <li>
-                    <a href="">
+                <li class="nav-btn"><a href="#">Home</a></li>
+                <li class="nav-btn"><a href="#about-section">Band</a></li>
+                <li class="nav-btn"><a href="#tour-section">Tour</a></li>
+                <li class="nav-btn"><a href="#contact-section">Contact</a></li>
+                <li class="subnav-btn">
+                    <a>
                         More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -50,6 +85,12 @@
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+            <!-- End search button -->
+            <!-- Mobile menu button -->
+            <div class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- End mobile menu button -->
         </div>
         <div id="slider">
             <div class="text-content text-center">
