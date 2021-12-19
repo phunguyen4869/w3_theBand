@@ -48,8 +48,12 @@
                         countSubnav++;
                     }
                 });
+
+                $("#header").click(function (event) {
+                    event.stopPropagation();
+                });
                 //auto close menu when user clicks on element
-                $(".nav-btn").click(function () {
+                $(".nav-btn, #main").click(function () {
                     $("#header").css("height", "46px");
                     $(".mobile-menu-btn").css("background-color", "#000");
                     $(".menu-icon").css("color", "#fff");
