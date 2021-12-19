@@ -537,4 +537,8 @@ html {
         text-decoration: none;
         font-size: 20px;
     }
+
+    .contact-info{
+        margin: 12px;
+    }
 }

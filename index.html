@@ -21,6 +21,10 @@
                 $(".ticket-modal").slideUp(300);
             });
             if ($(document).width() <= 740) {
+                //member and place item responsive
+                $(".member-item, .place-item").removeClass("col-3").addClass("col-full");
+                //contact responsive
+                $(".contact-info, .contact-form").removeClass("col-2").addClass("col-full");
                 //nav btn
                 var countMenu = 0;
                 $(".mobile-menu-btn").click(function () {
