@@ -527,7 +527,7 @@ html {
     }
 
     #header .home-btn {
-        display: inline-block;
+        display: inline-block !important;
     }
 
     #header .home-btn>a {
@@ -535,5 +535,6 @@ html {
         color: #fff;
         line-height: 46px;
         text-decoration: none;
+        font-size: 20px;
     }
 }
