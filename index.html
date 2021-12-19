@@ -24,8 +24,11 @@
                 //display Home button on title bar
                 $(".title-bar").css("display", "inline-block");
 
-                $(".nav-arrow-down").removeClass("ti-angle-down").addClass("ti-angle-right");
+                //member list item display 1 column
+                $(".member-item").removeClass("col-3").addClass("col-full");
 
+                //subnav arrow
+                $(".nav-arrow-down").removeClass("ti-angle-down").addClass("ti-angle-right");
                 //nav btn
                 var countMenu = 0;
                 $(".mobile-menu-btn").click(function () {
