@@ -21,15 +21,24 @@
                 $(".ticket-modal").slideUp(300);
             });
             if ($(document).width() <= 740) {
+                //display Home button on title bar
+                $(".title-bar").css("display", "inline-block");
+
+                $(".nav-arrow-down").removeClass("ti-angle-down").addClass("ti-angle-right");
+
                 //nav btn
                 var countMenu = 0;
                 $(".mobile-menu-btn").click(function () {
                     if (countMenu % 2 == 0) {
+                        //hide home on title bar and show menu
+                        $(".title-bar").css("display", "none");
                         $("#header").css("height", "auto");
                         $(".mobile-menu-btn").css("background-color", "#ccc");
                         $(".menu-icon").css("color", "#fff");
                         countMenu++;
                     } else {
+                        //show home on title bar and hide menu
+                        $(".title-bar").css("display", "inline-block");
                         $("#header").css("height", "46px");
                         $(".mobile-menu-btn").css("background-color", "#000");
                         $(".menu-icon").css("color", "#fff");
@@ -41,15 +50,22 @@
                 var countSubnav = 0;
                 $(".subnav-btn").click(function () {
                     if (countSubnav % 2 == 0) {
+                        //show subnav
                         $("#nav li .subnav").css("position", "relative");
+                        $(".nav-arrow-down").removeClass("ti-angle-right").addClass("ti-angle-down");
                         countSubnav++;
                     } else {
+                        //hide subnav
                         $("#nav li .subnav").css("position", "absolute");
+                        $(".nav-arrow-down").removeClass("ti-angle-down").addClass("ti-angle-right");
                         countSubnav++;
                     }
                 });
+
                 //auto close menu when user clicks on element
-                $(".nav-btn").click(function () {
+                $(".nav-btn, #main").click(function () {
+                    //display Home button on title bar
+                    $(".title-bar").css("display", "inline-block");
                     $("#header").css("height", "46px");
                     $(".mobile-menu-btn").css("background-color", "#000");
                     $(".menu-icon").css("color", "#fff");
@@ -65,6 +81,7 @@
     <div id="main">
         <div id="header">
             <!-- Begin nav -->
+            <a href="#" class="title-bar" style="display: none">HOME</a>
             <!-- Mobile menu button -->
             <div class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
