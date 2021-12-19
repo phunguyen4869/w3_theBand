@@ -482,6 +482,7 @@ html {
 
     #nav>li {
         display: block;
+        width: 100vw;
     }
 
     #header {

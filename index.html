@@ -21,6 +21,7 @@
                 $(".ticket-modal").slideUp(300);
             });
             if ($(document).width() <= 740) {
+                //nav btn
                 var countMenu = 0;
                 $(".mobile-menu-btn").click(function () {
                     if (countMenu % 2 == 0) {
@@ -36,6 +37,7 @@
                         countMenu++;
                     }
                 });
+                //subnav btn 
                 var countSubnav = 0;
                 $(".subnav-btn").click(function () {
                     if (countSubnav % 2 == 0) {
@@ -63,6 +65,11 @@
     <div id="main">
         <div id="header">
             <!-- Begin nav -->
+            <!-- Mobile menu button -->
+            <div class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- End mobile menu button -->
             <ul id="nav">
                 <li class="nav-btn"><a href="#">Home</a></li>
                 <li class="nav-btn"><a href="#about-section">Band</a></li>
@@ -86,11 +93,6 @@
                 <i class="search-icon ti-search"></i>
             </div>
             <!-- End search button -->
-            <!-- Mobile menu button -->
-            <div class="mobile-menu-btn">
-                <i class="menu-icon ti-menu"></i>
-            </div>
-            <!-- End mobile menu button -->
         </div>
         <div id="slider">
             <div class="text-content text-center">
