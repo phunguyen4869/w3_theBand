@@ -525,4 +525,15 @@ html {
         margin-left: 32px;
         display: block;
     }
+
+    #header .home-btn {
+        display: inline-block;
+    }
+
+    #header .home-btn>a {
+        padding: 0 24px;
+        color: #fff;
+        line-height: 46px;
+        text-decoration: none;
+    }
 }
