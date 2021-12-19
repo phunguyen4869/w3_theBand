@@ -525,11 +525,4 @@ html {
         margin-left: 32px;
         display: block;
     }
-
-    .title-bar {
-        padding: 0 24px;
-        text-decoration: none;
-        color: #fff;
-        line-height: 46px;
-    }
 }
