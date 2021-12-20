@@ -14,6 +14,7 @@
             $(".buy-ticket-btn").click(function () {
                 $(".ticket-modal").slideDown(500).css("display", "flex");
             });
+            //prevent close when click inside modal
             $(".modal-container").click(function (event) {
                 event.stopPropagation();
             });
@@ -56,11 +57,11 @@
                         countSubnav++;
                     }
                 });
-
+                //prevent close header when click outside
                 $("#header").click(function (event) {
                     event.stopPropagation();
                 });
-                //auto close menu when user clicks on element
+                //auto close menu when user clicks on outside of menu
                 $(".nav-btn, #main").click(function () {
                     $("#header").css("height", "46px");
                     $(".mobile-menu-btn").css("background-color", "#000");
