@@ -437,14 +437,14 @@ html {
 }
 
 /* PC */
-@media(min-width:1024px) {
+@media(min-width:64em) {
     #header .mobile-menu-btn {
         display: none;
     }
 }
 
 /* Tablet */
-@media(min-width:740px) and (max-width:1023px) {
+@media(min-width:46.25em) and (max-width:63.9375em) {
     #header .mobile-menu-btn {
         display: none;
     }
@@ -465,7 +465,7 @@ html {
 }
 
 /* Mobile */
-@media(max-width:740px) {
+@media(max-width:46.1875em) {
     .row {
         margin-left: 0;
         margin-right: 0;
