@@ -40,6 +40,7 @@
                         $(".mobile-menu-btn").css("background-color", "#000");
                         $(".menu-icon").css("color", "#fff");
                         $("#nav li .subnav").css("position", "absolute");
+                        $(".nav-arrow-down").removeClass("ti-angle-up").addClass("ti-angle-down");
                         countMenu++;
                     }
                 });
@@ -67,7 +68,9 @@
                     $(".mobile-menu-btn").css("background-color", "#000");
                     $(".menu-icon").css("color", "#fff");
                     $("#nav li .subnav").css("position", "absolute");
+                    $(".nav-arrow-down").removeClass("ti-angle-up").addClass("ti-angle-down");
                     countMenu--;
+                    countSubnav--;
                 });
             }
         });
