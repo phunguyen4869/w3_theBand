@@ -13,6 +13,7 @@
         $(document).ready(function () {
             $(".buy-ticket-btn").click(function () {
                 $(".ticket-modal").slideDown(500).css("display", "flex");
+                $(".ticket-modal").css("background", "rgba(0, 0, 0, 0.4)");
             });
             //prevent close when click inside modal
             $(".modal-container").click(function (event) {
